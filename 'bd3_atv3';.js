@@ -529,7 +529,65 @@ use(database);
             ]) */
 
         
-
+                //Pesquisa pelo produto mais caro          
+                //db['bd3_atv3_produtos'].find().sort( {"Valor do Produto": -1 }).limit(1)
+                
+                //Pesquisa pelo produto mais barato
+                //db['bd3_atv3_produtos'].find().sort( {"Valor do Produto": 1 }).limit(1)
+                
+                //Requisição C
+                /*db['bd3_atv3_produtos'].find({
+                
+                        "Valor do Produto" : {$gte: 100, $lte: 500}
+                    
+                     }) */
+                
+                //Requisição D
+                /*db['bd3_atv3_produtos'].find({
+                
+                     "Categoria do Produto" : "Alimentos / Presentes"
+                
+                 }) */
+                 
+                //Requisição E     
+                /* db['bd3_atv3_produtos'].find({
+                       $or : [
+                            {"Categoria do Produto" : {$eq : 'Eletrodomésticos / Cozinha'}},
+                            {"Categoria do Produto" : {$eq : 'Alimentos / Presentes'}},
+                         ]
+                     }) */
+                
+                //Requisição F
+                /*db['bd3_atv3_produtos'].find({
+                    
+                'Categoria do Produto':{$nin: ['Eletrônicos / Áudio','Eletrônicos / Games'] },
+                            
+                    }); */
+                
+                //Requisição G
+                
+                //db['bd3_atv3_produtos'].find().sort( {"Valor do Produto": 1 })
+                
+                //Requisição H
+                //db['bd3_atv3_produtos'].find().sort( {"Valor do Produto": -1 })
+                
+                //Requisição I
+                /*db['bd3_atv3_produtos'].find({
+                    
+                'Categoria do Produto':'Eletrodomésticos / Cozinha'
+                    
+                }).sort({"Valor do Produto": -1 }); */
+                
+                
+                //Requisição J
+                /*db['bd3_atv3_produtos'].find({
+                    
+                     'Categoria do Produto':{$nin: ['Eletrodomésticos / Cozinha'] },
+                
+                 }).sort({"Valor do Produto": -1 });
+                
+                 db['bd3_atv3_produtos'].find(); */
+                
     
                    
 
